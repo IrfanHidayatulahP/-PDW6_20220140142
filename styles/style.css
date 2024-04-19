@@ -1,0 +1,112 @@
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .song-container {
+    position: relative;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(50%);
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  }
+  
+  .song-container:hover {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .song-cover {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .song-info {
+    flex: 1;
+  }
+  
+  .song-title {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .song-artist {
+    font-size: 18px;
+    color: #ccc;
+  }
+  
+  .progress-bar-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #333;
+    border-radius: 5px;
+    margin-right: 10px;
+    overflow: hidden;
+  }
+  
+  .progress-bar-fill {
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    transition: width 0.2s ease-in-out;
+  }
+  
+  .time-display {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .play-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .play-button,
+  .pause-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .play-button:hover,
+  .pause-button:hover {
+    background-color: #ccc;
+  }

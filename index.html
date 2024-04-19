@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Ndak tau kok tanya saya</title>
+</head>
+<body>
+
+    <video id="bg-video" muted loop>
+        <source src="./Assets/Demon Slayer _ Kimetsu no Yaiba AMV sold out.mp4" type="video/webm">
+        Your browser does not support the video.
+    </video>
+    <div class="overlay"></div>
+    
+    <div class="song-container">
+        <img src="./Assets/download (5).jpeg" alt="Song Conver" class="song-cover">
+        <div class="song-info">
+            <h2 class="song-title">Sold Out</h2>
+            <p class="song-artist">Hawk Nelson</p>
+            <div class="progress-bar-container">
+                <div class="progress-bar">
+                    <div class="progress-bar-fill"></div>
+                </div>
+                <span class="time-display">0:00 / 0:00</span>
+            </div>
+            <div class="play-controls">
+                <button class="play-button" onclick="playPause()">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="pause-button" onclick="playPause()">
+                    <i class="fas fa-pause"></i>
+                </button>
+            </div>
+        </div>
+        <audio src="./Assets/Demon Slayer Kimetsu no Yaiba AMV sold out.mp3" class="song-track"></audio>
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+</html>
